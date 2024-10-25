@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1</title>
+    <meta name="description" content="Виконала: Лапін Артур">
+    <meta name="keywords" content="Про себе, моє хобі">
+    <style>
+        * 
+        {
+            padding: 2px;
+            margin: 0;
+            width: auto;
+            height: auto;
+            background-color: rgb(156, 195, 234);
+            text-align: auto;
+            font-family: 'Courier New', monospace;
+            color: rgba(233, 12, 12, 0.853);
+        }
+    
+        footer
+        {
+            text-align: right;
+            text-decoration: underline;
+        }
+    
+        .text1 
+        {
+            text-decoration: overline;
+            color: grey;
+        }
+    
+        p.bold 
+        {
+            font-weight: bold;
+        }
+    
+        .text 
+        {
+            text-align: left;
+        }
+    
+        h1, h2 
+        {
+            text-align: center;
+        }
+    </style>
+ </head>
+<body>
+    <title>Завдання 2</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.createElement('input');
+            button.type = 'button';
+            button.value = 'Показати дату останньої модифікації документа';
+            button.onclick = function () {
+                alert('Дата останньої модифікації: ' + document.lastModified);
+            };
+
+            document.body.appendChild(button);
+        });
+    </script>
+</body>
+</html>

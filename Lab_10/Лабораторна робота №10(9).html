@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Завдання 9</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Збільшення малюнка</title>
+</head>
+
+<body>
+    <img src="https://i.ytimg.com/vi/H7gkqCGBbPk/sddefault.jpg" name='kawazaki' width=150 height=160 border=1 alt="Lexus">
+    <p id="описМалюнка">Pinguins?</p>
+    <input type="button" value="Збільшимо рисунок" onclick="збільшитиМалюнок()">
+    
+    <script>
+        function збільшитиМалюнок() {
+            var малюнок = document.images['kawazaki'];
+            малюнок.width = 250;
+            малюнок.height = 310;
+            малюнок.alt = 'Ні, це Kawazaki';
+            малюнок.border = 4;
+
+            // Змінюємо текст опису малюнка
+            document.getElementById('описМалюнка').innerText = 'Ні, це Kawazaki';
+        }
+    </script>
+</body>
+
+</html>

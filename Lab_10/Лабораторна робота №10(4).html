@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Завдання 4</title>
+    <script>
+        var pr1;
+
+        function викликМетодуOpen() {
+            pr1 = window.open('Лабораторна робота №10(3).html', 'pr1', 'width=200, height=150');
+        }
+
+        function закриттяВікна() {
+            if (pr1 && !pr1.closed) {
+                pr1.close();
+            } else {
+                alert('Вікно вже зачинено або не відкрито.');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>
+        <input onclick="викликМетодуOpen();" type="button" value="Викликаємо метод open"><br><br>
+        <input onclick="закриттяВікна();" type="button" value="Зачинемо вікно">
+    </p>
+</body>
+
+</html>

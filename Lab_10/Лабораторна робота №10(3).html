@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Завдання 3</title>
+    <script>
+        function відображенняПривітання() {
+            var моєІм_я = document.getElementById('моєІм_я').value;
+            var привітання = '<html><body style="background-color: #DDA0DD; color: #7B68EE;"><h3 align=center>Добрийдень, ' + моєІм_я + '</h3></body></html>';
+            document.write(привітання);
+        }
+    </script>
+</head>
+
+<body>
+    <p>ВВЕДІТЬ ВАШЕ ІМ’Я: <input id="моєІм_я" name="моєІм_я"></p>
+    <input onclick="відображенняПривітання();" type="button" value="OK">
+</body>
+
+</html>

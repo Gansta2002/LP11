@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Завдання 5</title>
+    <script>
+        function викликМетодуPrompt() {
+            top.im = prompt('Введіть ваше ім\'я');
+        }
+
+        function переглядВведеноїІнформації() {
+            alert(top.im);
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td align="middle">
+                <input onclick="викликМетодуPrompt();" type="button" value="Викличемо метод prompt"><br>
+                <input onclick="переглядВведеноїІнформації();" type="button" value="Переглянемо введену інформацію">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

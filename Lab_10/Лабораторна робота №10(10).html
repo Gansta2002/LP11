@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Завдання 10</title>
+    <script>
+      var al=0;function podmen()
+	{
+	var w=document.images[0].src;
+	var ch=w.lastIndexOf("/");
+	var path=w.substring(0,ch+1);
+	if(parent.al==0)
+	  {document.images[0].src=path+"https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Petersdom_von_Engelsburg_gesehen.jpg/411px-Petersdom_von_Engelsburg_gesehen.jpg"; parent.al=1;}
+else
+	  {document.images[0].src=path+"https://oberig-store.in.ua/image/cache/webp/catalog/product/A3plyus_331-700x700.webp"; parent.al=0;}
+setTimeout("podmen()","600");
+    }  
+	setTimeout("podmen()","600");  
+
+    </script>
+</head>
+<BODY background="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Petersdom_von_Engelsburg_gesehen.jpg/411px-Petersdom_von_Engelsburg_gesehen.jpg">	<CENTER>
+<H1><FONT color=Blue>Зміна зображення через задані проміжки часу</FONT></H1>
+<IMG height=140 src="https://funtime.com.ua/uploads/img/grid/2022/12/tendrivska-kosa-1-639e237d8dc08.jpg" width=150 border=1></CENTER></BODY>
+
+
+</html>
